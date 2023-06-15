@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #131313;
+    overflow: hidden;
+}
+
+.line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 250vh;
+    background: #fff;
+    box-shadow: 
+        inset -10px 0 40px rgba(0, 0, 0, 1),
+        inset 10px 0 40px rgba(0, 0, 0, 1),
+        inset -10px 0 10px rgba(255, 255, 0255, 0.25),
+        inset 10px 0 10px rgba(255, 255, 255, 0.25),
+        0 0 50px rgba(0, 0, 0, 1);
+}
+
+.line.line1{
+    background: #222 radial-gradient(#e203f7 9px, #0000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-450%, -50%) rotate(180deg);
+    animation: animate-one 2s linear infinite;
+}
+
+.line.line2{
+    background: #222 radial-gradient(#0affde 9px, #0000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(450%, -38%) rotate(180deg);
+    animation: animate-two 2s linear infinite;
+}
+
+.line.line3{
+    background: #222 radial-gradient(#0380f4 9px, #0000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -50%) rotate(450deg);
+    animation: animate-two 2s linear infinite;
+}
+
+.line.line4{
+    background: #222 radial-gradient(#ff6a07 9px, #0000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -62%) rotate(-450deg);
+    animation: animate-one 2s linear infinite;
+}
+
+.line.line5{
+    background: #222 radial-gradient(#e7e4e5 9px, #0000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-90%, -38%) rotate(-450deg);
+    animation: animate-two 2s linear infinite;
+}
+
+.line.line6{
+    background: #222 radial-gradient(#0f0 9px, #0000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(0%, -45%) rotate(-180deg);
+    animation: animate-two 2s linear infinite;
+}
+
+@keyframes animate-one{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 35px -35px;
+    }
+}
+
+@keyframes animate-two{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 35px -35px;
+    }
+}
